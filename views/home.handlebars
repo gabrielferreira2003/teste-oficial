@@ -1,0 +1,26 @@
+<div class="conteudo">
+    <div id="imgPrincipal">
+        <div style="overflow: hidden;">
+            <img src="imagens/imgPrincipal.jpg">
+        </div>
+        
+    </div>
+    <div id="barraEsquerda"></div>
+    <div id="produtos">
+        <center><h1>PRODUTOS</h1></center>
+        <hr>
+        <div id="listContainer">
+            {{#each posts}}
+                <a href="./checkout">
+                    <div id="prodCaixa">
+                        <img src="{{imagem}}" width="250px" height="250px">
+                        <p>{{nome}}</p>
+                        <strong><p id="preco">R$ {{preco}}</p></strong>
+                    </div>
+                </a>
+            {{/each}}
+        </div>
+    </div>
+    <div id="barraDireita"></div>
+</div>
+
